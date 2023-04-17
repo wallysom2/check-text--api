@@ -1,13 +1,13 @@
 import { Router } from "express";
 
-import { addWordToWhiteList,
-         removeWordfromWhiteList,
+import { addtoWhiteList,
+         removefromWhiteList,
          getWordsFromWhiteList } from '../controllers/whiteListController.js';
 
 const blackListRouter = Router();
 
-blackListRouter.post('/whitelist/add', addWordToWhiteList );
-blackListRouter.post('/whitelist/remove', removeWordfromWhiteList );
+blackListRouter.post('/whitelist/add', addtoWhiteList );
+blackListRouter.post('/whitelist/remove', removefromWhiteList );
 blackListRouter.get('/whitelist', getWordsFromWhiteList);
 
 export default blackListRouter;

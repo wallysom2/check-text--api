@@ -5,4 +5,6 @@ const checkRouter = Router();
 
 checkRouter.get('/check', checkText)
 
+
+
 export default checkRouter;
