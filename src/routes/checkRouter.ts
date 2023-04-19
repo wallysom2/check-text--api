@@ -12,4 +12,4 @@ checkRouter.get('/check', checkText);
 checkRouter.post('/check/add', addDirtyWord);
 checkRouter.post('/check/remove', removeDirtyWord);
 
-export default checkRouter;
+export default checkRouter
