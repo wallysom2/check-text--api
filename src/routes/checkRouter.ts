@@ -1,10 +1,15 @@
-import { Router } from "express";
-import { checkText } from '../controllers/checkController.js';
+import { Router } from 'express';
+import {
+	addDirtyWord,
+	checkText,
+	removeDirtyWord,
+	listDirtyWords
+} from '../controllers/checkController.js';
 
 const checkRouter = Router();
-
-checkRouter.get('/check', checkText)
-
-
+checkRouter.get('/', listDirtyWords);
+checkRouter.get('/check', checkText);
+checkRouter.post('/check/add', addDirtyWord);
+checkRouter.post('/check/remove', removeDirtyWord);
 
 export default checkRouter;

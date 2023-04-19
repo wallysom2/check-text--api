@@ -7,12 +7,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Dirtywords {
+  id        Int      @default(autoincrement()) @id
+  word      String   @unique
+
+    @@map("dirtywords")
+}
+
 model Blacklist {
   id        Int      @default(autoincrement()) @id
   word      String   @unique
+
+    @@map("blacklist") 
 }
 
 model Whitelist {
   id        Int      @default(autoincrement()) @id
   word      String   @unique
+
+    @@map("whitelist")
 }
