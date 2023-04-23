@@ -1,8 +1,8 @@
 import { Blacklist } from '@prisma/client';
 import prisma from '../config/databaseConfig.js';
 
-export async function isWordFromBlacklist(word: string): Promise<boolean | undefined> {
-	const wordFromBlacklist = await prisma.blacklist.findUnique({
+export async function isWordFromBlacklist(word: string): Promise<boolean> {
+	const wordFromBlacklist: Blacklist = await prisma.blacklist.findUnique({
 		where: {
 			word,
 		},
