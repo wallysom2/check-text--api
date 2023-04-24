@@ -1,6 +1,4 @@
 # Bitlab Selection Process Challenge - 2023 - API
-Deploy: check-text-208nwq88o-wallysom2.vercel.app
-
 <br/>
 
 ## ➕ Project Overview
@@ -56,9 +54,10 @@ npm run dev
 ``` 
 <br/>
 
-## Frontend Repository
+## Frontend
 
 <a href="https://github.com/wallysom2/check-text--front.git">Frontend repository</a>
+
 <a href="https://check-text-front-orpin.vercel.app/">Frontend deploy</a>
 
 <br/>
